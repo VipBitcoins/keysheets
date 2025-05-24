@@ -1,0 +1,33 @@
+Learn about the world's first bitcoin endowment fund at
+https://lifeboat.com/ex/bitcoin
+
+If you have any problems with this program, join the discussion at
+https://bitcointalk.org/index.php?topic=301068.0
+
+This version of oclvanitygen has been specially built so it runs about 4
+times as fast as the old version when using high-end AMD cards (7xxx or
+greater). It is based on the version documented at
+https://en.bitcoin.it/wiki/Vanitygen
+
+We built this due to the frustration of trying to run oclvanitygen on a
+Sapphire Radeon HD 7950 3GB and only getting 6 Mkey/s despite massively
+overclocking the card. You can learn more at
+https://github.com/samr7/vanitygen/issues/19
+
+oclvanitygen will work with AMD Catalyst drivers 12.10 and earlier and
+AMD Catalyst drivers 14.4 and greater.
+
+To create compressed keys use the "-F compressed" option as in
+oclvanitygen -F compressed -d 0 1Life or
+vanitygen -F compressed 1Life
+
+** NOTE THAT COMPRESSED KEYS ARE GENERATED ABOUT 15% FASTER THAN
+NONCOMPRESSED KEYS SO WE RECOMMEND THAT YOU USE THEM **
+(It's faster since it doesn't have to hash a second SHA-256 block.)
+
+vanitygen64 is a 64-bit version of vanitygen. It runs about 50% faster
+than the 32-bit version because vanitygen performs a lot of large
+integer arithmetic.
+
+oclvanitygen64 is a 64-bit version of oclvanitygen. It is just a little
+bit faster but every bit counts!
